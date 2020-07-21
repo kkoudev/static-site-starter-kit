@@ -46,7 +46,7 @@ src/
 │   ├── images                # image files
 │   ├── scripts               # TypeScript files
 │   │   ├── libs              # library scripts
-│   │   └── pages             # page scripts (for webpack entry file)
+│   │   └── pages             # page scripts (webpack entry files)
 │   └── styles                # CSS files
 │       ├── components        # component styles
 │       │   ├── atoms         # Atoms styles
@@ -83,7 +83,7 @@ background-image: resolve('../images/sample.svg');
 
 #### image-set-rs (for CSS)
 
-Cachebuster image-set urls for CSS
+Cachebuster image-set urls for CSS.  
 This use insted of `image-set` function.  
 
 * Example
