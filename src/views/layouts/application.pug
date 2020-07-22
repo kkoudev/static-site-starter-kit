@@ -22,9 +22,9 @@ html(lang="ja")
     meta(property="og:image" content=`${ogImage != null ? env.rootUrl + ogImage : ""}`)
     meta(property="og:site_name" content=`${ogSiteName != null ? ogSiteName : ""}`)
     meta(property="og:locale" content="ja_JP")
-    meta(property="twitter:card" content="summary_large_image")
-    meta(property="twitter:site" content="")
     meta(property="fb:app_id" content="")
+    meta(name="twitter:card" content="summary_large_image")
+    meta(name="twitter:site" content="")
     include ../partials/_favicon.pug
     if env.preconnects && env.preconnects.length > 0
       each preconnect in env.preconnects
