@@ -32,9 +32,6 @@ const usePlugins = [
     stylesheetPath: config.stylesDir,
     cachebuster: true,
   }),
-  require('postcss-calc')({
-    mediaQuery: true,
-  }),
   require('postcss-flexbugs-fixes'),
   require('postcss-preset-env')({
     autoprefixer: {
@@ -47,6 +44,9 @@ const usePlugins = [
     ],
   }),
   require('postcss-image-set-polyfill'),
+  require('postcss-calc')({
+    mediaQuery: true,
+  }),
   config.isNodeProduction && require('postcss-sort-media-queries')({
     sort: 'mobile-first',
   }),
