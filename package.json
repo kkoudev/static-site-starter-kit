@@ -50,6 +50,9 @@
     }
   },
   "lint-staged": {
+    "*.pug": [
+      "yarn lint:view"
+    ],
     "*.{ts,tsx}": [
       "yarn lint:tsc",
       "yarn lint:script"
